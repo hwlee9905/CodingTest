@@ -35,12 +35,8 @@ for k in range(a-7):
                     count2 = count2 + 1
                 # print(value, end=" ")
         # print(f'count = {count} count2 = {count2}')
-        if(count >= count2):
-            if(result > count2):
-                result = count2
-        else:
-            if(result > count):
-                result = count
+        result = min(count, count2, result)
+
         count = 0
         count2 = 0
 print(result)
