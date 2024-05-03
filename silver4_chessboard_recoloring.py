@@ -24,7 +24,6 @@ count = 0
 count2 = 0
 result = 1000000
 # K, J 부터 시작하는 8x8 배열 추출
-
 for k in range(a-7):
     for j in range(b-7):
         sub_arr = [arr[i][j:j+8] for i in range(k, k+8)]
