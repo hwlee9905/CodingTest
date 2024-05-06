@@ -2,9 +2,6 @@ from collections import deque
 from sys import stdin
 input = stdin.readline
 
-
-
-
 person_count = int(input())
 a, b = map(int, input().split())
 m = int(input())
