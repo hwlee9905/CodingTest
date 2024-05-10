@@ -37,11 +37,8 @@ class Node:
 
 
 root = Node(list[0][0], 0, 0)
-# root.preorder()
 root1 = Node(list[0][1], 1, 0)
-# root1.preorder()
 root2 = Node(list[0][2], 2, 0)
-# root2.preorder()
 print(min(sumList))
 
 # def RGB(start):
