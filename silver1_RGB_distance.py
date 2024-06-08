@@ -9,7 +9,6 @@ for i in range(N):
 # def RGB(start):
 # 시간초과 하지 않는 코드
 # N = int(input())
-
 # cost = []
 # for _ in range(N):
 #     cost.append(list(map(int, input().split())))
