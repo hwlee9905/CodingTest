@@ -50,7 +50,6 @@ class Node:
             if self.right:  # 오른쪽 자식이 있으면 오른쪽 자식 순회
                 self.right.preorder()
 
-
 root = Node(list[0][0], 0, 0)
 root1 = Node(list[0][1], 1, 0)
 root2 = Node(list[0][2], 2, 0)
