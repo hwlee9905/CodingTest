@@ -22,7 +22,6 @@ for i in range(N):
 #     dp[i][2] = min(dp[i-1][0], dp[i-1][1]) + cost[i][2]
 #
 # print(min(dp[N-1]))
-
 class Node:
     def __init__(self, data=None, i=None, depth=None):
         self.data = data
