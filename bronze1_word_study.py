@@ -17,7 +17,6 @@ freq=""
 count=0
 countfreq=0
 # 초기 빈 2차원 리스트 생성
-
 def findchar(char):
     # print(f'in findchar {char}')
     i=0
