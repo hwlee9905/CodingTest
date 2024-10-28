@@ -1,4 +1,3 @@
-
 import sys, collections
 deque = collections.deque
 input = sys.stdin.readline
@@ -8,9 +7,6 @@ for _ in range(M):
     x, y = map(int, input().split())
     graph[x].append(y)
     graph[y].append(x)
-
-
-
 
 def bfs(graph, start):
     visitSequence = []
