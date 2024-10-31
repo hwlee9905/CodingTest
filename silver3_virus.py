@@ -4,7 +4,8 @@ input = sys.stdin.readline
 
 
 
-#문제 https://www.acmicpc.net/problem/2606
+# 문제
+# https://www.acmicpc.net/problem/2606
 
 # 예제 입력 1
 # 7
