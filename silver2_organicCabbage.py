@@ -22,7 +22,7 @@ for _ in range(T):
         for j, column in enumerate(row):
             visited[i][j] = True
             if column:
-                queue.
+                queue. test
 
 
 
