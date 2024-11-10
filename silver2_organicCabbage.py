@@ -17,7 +17,13 @@ for _ in range(T):
     for i in range(K):
         m, n = map(int, input().split())
         array[n][m] = 1
-
+--- main branch test ---
+--- main branch test ---
+--- main branch test ---
+--- main branch test ---
+--- main branch test ---
+--- main branch test ---
+--- main branch test ---
     for i in range(1, N + 1):
         for j in range(1, M + 1):
             if array[i][j] and not visited[i][j]:
