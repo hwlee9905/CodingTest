@@ -1,35 +1,36 @@
 # 문제
 # https://www.acmicpc.net/problem/2839
-# dp[T][F} T = 3킬로 봉지 개수, F = 5킬로 봉지 개수
-import sys
-
+# dp[F][T} T = 3킬로 봉지 개수, F = 5킬로 봉지 개수
+import sys, math
 INPUT = sys.stdin.readline
 
 N = int(INPUT())
-
-dp = [[0] * N for _ in range(N)]
+tNum = math.floor(N/3) + 1
+fNum = math.floor(N/5) + 1
+dp = [[0] * tNum for _ in range(fNum)]
 sumList = []
+
+# print(tNum, fNum)
 F = 5
+
 T = 3
-Fnum = 0
-Tnum = 5000
 SUM = 5000
-for f in range(N):
-    if (F * f) >= N:
+for f in range(fNum):
+    if (F * f) > N:
         break
-    for t in range(N):
+    for t in range(tNum):
         dp[f][t] = (F * f) + (T * t)
         if dp[f][t] >= N:
             if dp[f][t] == N:
-                sumList.append([t,f])
+                if (t + f) < SUM:
+                    SUM = t + f
             break
 
-for data in sumList:
-    if SUM > sum(data):
-        SUM = sum(data)
-
-if(SUM == 5000):
+if SUM == 5000:
     SUM = -1
+
+# for data in dp:
+#     print(data)
 
 print(SUM)
 
