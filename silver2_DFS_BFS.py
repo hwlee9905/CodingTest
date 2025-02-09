@@ -1,4 +1,7 @@
 import sys, collections
+
+from SWEA_D3_code_generator import queue
+
 deque = collections.deque
 input = sys.stdin.readline
 
