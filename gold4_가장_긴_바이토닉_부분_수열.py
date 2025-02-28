@@ -3,4 +3,9 @@ import sys
 INPUT = sys.stdin.readline
 N = int(INPUT())
 arr = list(map(int, INPUT().split()))
-print(arr)
+dp = [1] * N
+current = 0
+for i in range(N):
+
+
+print(dp)
